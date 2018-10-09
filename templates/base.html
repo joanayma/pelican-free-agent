@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{CSS_FILE}}" rel="stylesheet">
+    <link href="css/blueimp-gallery.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{FONTS}}/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -52,6 +53,8 @@
 {% endblock %}
 
 {% include 'about.html'%}
+
+{% include 'gallery.html'%}
 
 {% block contact %}	
 {% endblock %}
