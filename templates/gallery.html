@@ -2,16 +2,11 @@
 	<section class="success" id="gallery">
 	    <div class="container">
 		    <div id="links">
-		        <!-- todo: dynamic from files -->
-                        <a href="images/banana.jpg" title="Banana">
-                            <img src="images/thumbnails/banana.jpg" alt="Banana">
+			{% for file in IMAGES_LIST %}
+			<a href="images/{{ file }}">
+			     <img src="images/thumbnails/{{ file }}">
                         </a>
-                        <a href="images/apple.jpg" title="Apple">
-                            <img src="images/thumbnails/apple.jpg" alt="Apple">
-                        </a>
-                        <a href="images/orange.jpg" title="Orange">
-                            <img src="images/thumbnails/orange.jpg" alt="Orange">
-                        </a>
+			{% endfor %}
                     </div>
                 <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
 		    <div class="slides"></div>
